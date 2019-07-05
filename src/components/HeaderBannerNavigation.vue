@@ -56,5 +56,3 @@ li {
 }
 </style>
 
-// Sarahs-iMac:Documents sarahbrady$ cd vue-app
-// Sarahs-iMac:vue-app sarahbrady$ npm run serve

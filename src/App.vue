@@ -2,16 +2,18 @@
     <div id="app">
         <HeaderBanner/>
         <AboutUs/>
+        <ProfessionalSkills/>
     </div>
 </template>
 
 <script>
 import HeaderBanner from './components/HeaderBanner.vue'
 import AboutUs from './components/AboutUs.vue'
+import ProfessionalSkills from './components/ProfessionalSkills.vue'
     
 export default {
     components: {
-        HeaderBanner, AboutUs 
+        HeaderBanner, AboutUs, ProfessionalSkills 
     }
 }
     

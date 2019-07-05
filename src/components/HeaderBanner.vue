@@ -24,6 +24,5 @@ export default {
     background-size: contain;
     background-repeat: no-repeat;
     padding: 15px;
-}
-        
+}        
 </style>
