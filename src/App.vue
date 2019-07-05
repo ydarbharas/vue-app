@@ -1,16 +1,17 @@
 <template>
     <div id="app">
-        <TheNavBar/>
         <HeaderBanner/>
+        <AboutUs/>
     </div>
 </template>
 
 <script>
 import HeaderBanner from './components/HeaderBanner.vue'
+import AboutUs from './components/AboutUs.vue'
     
 export default {
     components: {
-        HeaderBanner 
+        HeaderBanner, AboutUs 
     }
 }
     
