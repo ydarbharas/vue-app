@@ -20,7 +20,7 @@ export default {
 .header {
     height: 700px;
     background-color: #dddee3;
-    background-image: url(assets/header-background-image.jpg);
+    background-image: url(../assets/header-background-image.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     padding: 15px;

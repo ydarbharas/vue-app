@@ -1,6 +1,6 @@
 <template>
     <div>
-        <img class="logo" src="./assets/logo.png">
+        <img class="logo" src="../assets/logo.png">
         <ul class="nav">
             <li><a id="active" href="index.html">Home</a></li>
             <li><a class= "about" href="#about">About</a></li>
