@@ -1,7 +1,8 @@
 <template>
     <div>
         <div class="skills-info">
-            <p class="skill-name">{{ skillName }}</p><p class="skill-percentage">{{ skillPercentage }}</p>
+            <p class="skill-name">{{ skillName }}</p>
+            <p class="skill-percentage">{{ skillPercentage }}</p>
             <div id="progress-bar-back">
                 <div id="progress-bar-front"></div>
             </div>
@@ -37,7 +38,7 @@ export default {
 
 .skills-info {
     width: 50%;
-    padding: 70px 50px;
+    padding: 0px 50px;
     text-align: left;
 }
 
