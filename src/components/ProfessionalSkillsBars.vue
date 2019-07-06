@@ -1,10 +1,10 @@
 <template>
     <div>
-        <div class="skills-info">
-            <p class="skill-name">{{ skillName }}</p>
-            <p class="skill-percentage">{{ skillPercentage }}</p>
+        <div class="skills-info" v-for="skill in skills">
+            <p class="skill-name">{{ skill.skillsName }}</p>
+            <p class="skill-percentage">{{ skill.skillsPercentage }}</p>
             <div id="progress-bar-back">
-                <div id="progress-bar-front"></div>
+                <div :class="skill.skillsClass"></div>
             </div>
         </div>
     </div>
@@ -12,7 +12,15 @@
 
 <script>
 export default {
-    props: ["skill-name", "skill-percentage"]
+    data() {
+        return {
+            skills: [
+                { id: 1, skillsName: "ui/ux design", skillsPercentage: "90%", skillsClass: "design"},
+                { id: 2, skillsName: "web development", skillsPercentage: "75%", skillsClass: "web-dev"},
+                { id: 3, skillsName: "marketing", skillsPercentage: "65%", skillsClass: "marketing"}
+            ]            
+        }
+    }
 }
 </script>
 
@@ -41,5 +49,25 @@ export default {
     padding: 0px 50px;
     text-align: left;
 }
+    
+.design {
+    width: 75%;
+    background-color: #10c9c3;
+    height: 5px;
+}
+
+.web-dev {
+    width: 90%;
+    background-color: #10c9c3;
+    height: 5px;
+}
+    
+.marketing {
+    width: 65%;
+    background-color: #10c9c3;
+    height: 5px;
+}
 
 </style>
+
+  <
