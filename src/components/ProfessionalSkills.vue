@@ -1,8 +1,9 @@
 <template>
-    <div class="skills">
-        <ProfessionalSkillsBars class="design" skillName="ui/ux design" skillPercentage="75%" />
-        <ProfessionalSkillsBars class="web-dev" skillName="web development" skillPercentage="90%" />
-        <ProfessionalSkillsBars class="marketing" skillName="marketing" skillPercentage="65%" />
+    <div id="skills">
+        <h2>Professional Skills</h2>
+        <ProfessionalSkillsBars class="design" skill-name="ui/ux design" skill-percentage="75%" />
+        <ProfessionalSkillsBars class="web-dev" skill-name="web development" skill-percentage="90%" />
+        <ProfessionalSkillsBars class="marketing" skill-name="marketing" skill-percentage="65%" />
     </div>
 </template>
 
@@ -18,7 +19,7 @@ export default {
 </script>
 
 <style>
-    .skills {
+#skills {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
@@ -27,23 +28,22 @@ export default {
     background-color: #f3f6fb;  
 }
     
-    #progress-bar-back {
-    background-color: #d8d8d8;
-    height: 5px;
-    margin-bottom: 30px;
-    margin-top: 15px
-}
     
-#progress-bar-front {
+.design #progress-bar-front {
+    width: 75%;
     background-color: #10c9c3;
     height: 5px;
 }
 
-#progress-bar-back.design {
-  width: 75%;
+.web-dev #progress-bar-front {
+    width: 90%;
+    background-color: #10c9c3;
+    height: 5px;
 }
-
-#progressbar-back.web-dev {
-  width: 90%;
+    
+.marketing #progress-bar-front {
+    width: 65%;
+    background-color: #10c9c3;
+    height: 5px;
 }
-
+</style>
