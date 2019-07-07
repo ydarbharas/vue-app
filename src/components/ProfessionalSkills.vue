@@ -13,10 +13,11 @@ export default {
         ProfessionalSkillsBars
     }
 }
-
 </script>
 
-<style>
+<style lang="scss">
+@import '../style/variables.scss';
+@import '../style/_mixins.scss'; 
     
 #skills {
     background-size: contain;
@@ -24,7 +25,12 @@ export default {
     background-position: right;
     height: 640px;
     background-image: url(../assets/skills-background-image.jpg);
-    background-color: #f3f6fb;  
+    background-color: #f3f6fb;
+    h2 {
+        @include headerFontStyle();
+        text-align: left;
+        padding: 100px 0px 10px 50px;
+    }
 }
     
 </style>

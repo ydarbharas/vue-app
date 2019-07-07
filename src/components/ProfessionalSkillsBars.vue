@@ -25,18 +25,17 @@ export default {
 }
 </script>
 
-<style>
-    
+<style lang="scss">
+@import '../style/variables.scss';
+@import '../style/_mixins.scss';
+
 .skill-name, .skill-percentage {
-    font-weight: bold;
-    display: inline;
-    padding-bottom: 50px;
+    display: inline;   
 }
 
 .skill-percentage {
     padding: 20px
 }
-
 
 #progress-bar-back {
     background-color: #d8d8d8;
@@ -49,24 +48,26 @@ export default {
     width: 50%;
     padding: 0px 50px;
     text-align: left;
+    text-transform: uppercase;
+    font-family: $textFont;
+    font-size: 0.7em;
+    letter-spacing: 1px;
+    font-weight: bold;
 }
-    
+ 
 .design {
+    @include skillsProgressBar();
     width: 75%;
-    background-color: #10c9c3;
-    height: 5px;
 }
 
 .web-dev {
+    @include skillsProgressBar();
     width: 90%;
-    background-color: #10c9c3;
-    height: 5px;
 }
     
 .marketing {
-    width: 65%;
-    background-color: #10c9c3;
-    height: 5px;
+    @include skillsProgressBar();
+     width: 65%;
 }
 
 /* .photography {
@@ -75,5 +76,3 @@ export default {
     height: 5px;
 } */
 </style>
-
-  <

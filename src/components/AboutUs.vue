@@ -29,12 +29,12 @@ export default {
     padding: 60px 300px;
     h2 {
         font-size: 1.8em;
-        @include headerFontStyleBlack();
+        @include headerFontStyle();
     }
     p {
     padding: 10px 0 20px 0;
     line-height: 1.5; 
-    @include textFontStyleGrey();
+    @include textFontStyle();
     }
 }
 </style>

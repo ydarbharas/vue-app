@@ -1,10 +1,10 @@
-@mixin headerFontStyleBlack {
+@mixin headerFontStyle {
     color: #191919;
     font-family: $headerFont;
 }
 
-@mixin textFontStyleGrey {
-    color: #7e7e7e;;
+@mixin textFontStyle {
+    color: #7e7e7e;
     font-family: $textFont;
 }
 
@@ -43,4 +43,9 @@
     transform: translate(-50%, -50%);
     text-align: center;
     cursor: pointer;
+}
+
+@mixin skillsProgressBar {
+    background-color: $themeColorBlue;
+    height: 5px;
 }

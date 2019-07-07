@@ -28,11 +28,11 @@ export default {
     line-height: 1.5;
     padding: 100px;
     h1 {
-        @include headerFontStyleBlack();
+        @include headerFontStyle();
         grid-column: 6 / 9; 
     }
     p {
-        @include textFontStyleGrey();
+        @include textFontStyle();
         grid-column: 6 / 9;
         padding-bottom: 30px;
     }
