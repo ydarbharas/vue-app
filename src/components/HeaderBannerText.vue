@@ -15,7 +15,6 @@ export default {
         }
     }
 }
-
 </script>
 
 <style lang="scss">
@@ -23,26 +22,24 @@ export default {
 @import '../style/_mixins.scss';   
 
 .header-text {
+    @include gridOctoColumns();
     clear: right;
     text-align: left;
     line-height: 1.5;
-    padding: 50px 50px 90px 70px;
-    @include gridOctoColumns();
+    padding: 100px;
+    h1 {
+        @include headerFontStyleBlack();
+        grid-column: 6 / 9; 
+    }
+    p {
+        @include textFontStyleGrey();
+        grid-column: 6 / 9;
+        padding-bottom: 30px;
+    }
+    button {
+        @include buttonFormat();
+        grid-column: 6 / 8;
+    }
 }
-    
-.header-text > h1 {
-    grid-column: 6 / 9;
-}
-    
-.header-text > p {
-    grid-column: 6 / 9;
-}
-    
-.header-text > button {
-    grid-column: 6 / 7;
-    width: 50%;
-}
-    
-
 </style>
 

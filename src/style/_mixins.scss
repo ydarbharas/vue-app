@@ -1,6 +1,11 @@
-@mixin headerFontStyle {
+@mixin headerFontStyleBlack {
     color: #191919;
     font-family: $headerFont;
+}
+
+@mixin textFontStyleGrey {
+    color: #7e7e7e;;
+    font-family: $textFont;
 }
 
 @mixin buttonFormat {
@@ -8,10 +13,11 @@
     text-transform: uppercase;
     color: $themeColorWhite;
     font-weight: 500;
-    padding: 18px 35px;
+    padding: 20px 40px;
     letter-spacing: 1px;
     cursor: pointer;
     border: 0;
+    width: 70%;
     background-color: $themeColorBlue;
 }
 

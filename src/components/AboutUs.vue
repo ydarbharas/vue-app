@@ -22,15 +22,19 @@ export default {
 </script>
 
 <style lang="scss">
-    
+@import '../style/variables.scss';
+@import '../style/_mixins.scss'; 
+
 .about-text {
     padding: 60px 300px;
     h2 {
         font-size: 1.8em;
+        @include headerFontStyleBlack();
     }
     p {
     padding: 10px 0 20px 0;
-    line-height: 1.5;    
+    line-height: 1.5; 
+    @include textFontStyleGrey();
     }
 }
 </style>

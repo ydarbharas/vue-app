@@ -18,8 +18,11 @@
 
 </script>
 
-<style>
+<style lang="scss">
+@import '../style/variables.scss';
+
 .nav {
+    font-family: $textFont;
     float: right;
     margin: 0;
     padding: 10px;
