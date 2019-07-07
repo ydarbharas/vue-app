@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import HeaderBannerNavigation from './HeaderBannerNavigation'
+import HeaderBannerNavigation from './HeaderBannerNavigation.vue'
 import HeaderBannerText from './HeaderBannerText.vue'
     
 export default {
