@@ -26,15 +26,18 @@ export default {
 }
 </script>
 
-<style>
-    
+<style lang="scss">
+@import '../style/variables.scss';
+@import '../style/_mixins.scss';  
+        
 .stats-numbers {
     margin-bottom: -10px;
 }
 
 .stats-achievement {
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 500;
+    font-weight: bold;
 }
 
 .stats-image {
@@ -43,17 +46,15 @@ export default {
 }
 
 .stats-card {
-    display: flex;
-    justify-content: space-evenly;
-    text-align: left;
+    @include flexCenter();
+    font-family: $headerFont;
     padding-top: 75px;
 }
     
 .stats-text {
     float: right;
-    font-family: 'Montserrat', sans-serif;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #ffff;
+    color: $themeColorWhite;
 }
 </style>

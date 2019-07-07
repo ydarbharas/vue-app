@@ -29,7 +29,7 @@ export default {
     h2 {
         @include headerFontStyle();
         text-align: left;
-        padding: 100px 0px 10px 50px;
+        padding: 200px 0px 10px 50px;
     }
 }
     
