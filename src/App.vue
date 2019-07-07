@@ -4,6 +4,7 @@
         <AboutUs/>
         <ProfessionalSkills/>
         <StatisticsBanner/>
+        <WorkPortfolio/>
     </div>
 </template>
 
@@ -12,10 +13,11 @@ import HeaderBanner from './components/HeaderBanner.vue'
 import AboutUs from './components/AboutUs.vue'
 import ProfessionalSkills from './components/ProfessionalSkills.vue'
 import StatisticsBanner from './components/StatisticsBanner.vue'
+import WorkPortfolio from './components/WorkPortfolio.vue'
     
 export default {
     components: {
-        HeaderBanner, AboutUs, ProfessionalSkills, StatisticsBanner 
+        HeaderBanner, AboutUs, ProfessionalSkills, StatisticsBanner, WorkPortfolio 
     }
 }
     
