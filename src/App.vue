@@ -25,7 +25,10 @@ export default {
     
 </script>
 
-<style>
+<style lang="scss">
+    
+@import './style/variables.scss';
+    
 #app {
 text-align: center;
 margin: 0px;

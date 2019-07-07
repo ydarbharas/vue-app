@@ -16,7 +16,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 .header {
     height: 700px;
     background-color: #dddee3;

@@ -1,27 +1,33 @@
 <template>
     <div class="header-text">
-	   <h1> We Design and Develop</h1>
-        <p>We are a new design studio based in USA. We have over 20 years of combined experience, and know a thing or two about designing websites and mobile apps.</p>
+	   <h1> {{ title }}</h1>
+        <p>{{ text }}</p>
         <button>Contact Us</button>
         </div>
 </template>
 
 <script>
+export default {
+    data() {
+        return {
+            title: "We Design and Develop",
+            text: "We are a new design studio based in USA. We have over 20 years of combined experience, and know a thing or two about designing websites and mobile apps."
+        }
+    }
+}
 
 </script>
 
-<style>
-    
+<style lang="scss">
+@import '../style/variables.scss';
+@import '../style/_mixins.scss';   
+
 .header-text {
     clear: right;
     text-align: left;
     line-height: 1.5;
     padding: 50px 50px 90px 70px;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: auto;
-    grid-row-gap: 15px;
-    margin: 0px;
+    @include gridOctoColumns();
 }
     
 .header-text > h1 {

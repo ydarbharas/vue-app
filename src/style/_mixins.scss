@@ -1,0 +1,40 @@
+@mixin headerFontStyle {
+    color: #191919;
+    font-family: $headerFont;
+}
+
+@mixin buttonFormat {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: $themeColorWhite;
+    font-weight: 500;
+    padding: 18px 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border: 0;
+    background-color: $themeColorBlue;
+}
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+    align-items: center;
+}
+
+@mixin gridOctoColumns {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: auto;
+    grid-row-gap: 15px;
+    margin: 0px;
+}
+
+@mixin centerIcons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    cursor: pointer;
+}
