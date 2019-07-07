@@ -22,6 +22,5 @@ export default {
     background-color: $themeColorBlue;
     height: 250px;
     margin-bottom: -20px;
-    }
-
+}
 </style>

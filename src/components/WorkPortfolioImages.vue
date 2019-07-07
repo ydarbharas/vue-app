@@ -29,34 +29,25 @@ export default {
 
 </script>
 
-<style>
-    
+<style lang="scss">
+@import '../style/variables.scss';
+@import '../style/_mixins.scss'; 
+
 .image-container {
   position: relative;
 }
-
-    
+  
 .image {
     width: 100%
 }
 
 .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 98.9%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: black;
+   @include overlayImage();
 }
 
 .image-container:hover .overlay {
-  opacity: 0.7;
+    opacity: 0.7;
 }
-
 
 .row-1 {
     margin-bottom: -23px;
@@ -66,7 +57,7 @@ export default {
     margin-bottom: -31px;
 }
     
-    .column-1 {
+.column-1 {
     grid-column: 1 / 3;
 }
 
@@ -83,21 +74,10 @@ export default {
 }
     
 .container {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: auto;
-    text-align: center;
-    grid-row-gap: 15px;
-    margin: 0px;
-    
-    }
+    @include gridOctoColumns();
+}
     
 .hover-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  cursor: pointer;
+    @include centerIcons();
 }   
 </style>
