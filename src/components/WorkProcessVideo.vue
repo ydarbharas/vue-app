@@ -39,11 +39,11 @@
             pauseVid() {
                 video.pause();
                 this.hidePause();
-                document.getElementById("video-video").removeEventListener("mouseover", this.showPause);
+                document.getElementById("video").removeEventListener("mouseover", this.showPause);
                 this.showPlay();
             },
             pauseEvent() {
-                document.getElementById("video-video").addEventListener("mouseover", this.showPause);
+                document.getElementById("video").addEventListener("mouseover", this.showPause);
             }
             
         }

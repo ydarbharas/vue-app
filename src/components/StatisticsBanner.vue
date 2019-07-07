@@ -1,9 +1,7 @@
 <template>
-<div>
     <div class="stats-banner">
         <StatisticsBannerCard/>
     </div>
-</div>
 </template>
 
 <script>
@@ -18,7 +16,10 @@ export default {
 
 <style>
 .stats-banner {
-        background-color: #10c9c3
+    background-color: #10c9c3;
+    height: 250px;
+    margin-bottom: -20px;
+   
     }
 
 </style>
