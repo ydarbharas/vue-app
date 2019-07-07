@@ -5,15 +5,17 @@
             <li><a id="active" href="index.html">Home</a></li>
             <li><a class= "about" href="#about">About</a></li>
             <li><a class= "work" href="#work">Work</a></li>
-            <li><a class= "process-" href="#process">Process</a></li>
-            <li><a class= "services-" href="#services">Services</a></li>
-            <li><a class= "testimonials-" href="#testimonials">Testimonals</a></li>
-            <li><a class= "contact-" href="#contact">Contact</a></li>
-            </ul>   
+            <li><a class= "process" href="#process">Process</a></li>
+            <li><a class= "services" href="#services">Services</a></li>
+            <li><a class= "testimonials" href="#testimonials">Testimonals</a></li>
+            <li><a class= "contact" href="#contact">Contact</a></li>
+        </ul>   
     </div>
 </template>
 
 <script>
+   
+
 </script>
 
 <style>
