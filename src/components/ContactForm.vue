@@ -36,6 +36,7 @@ export default {
 
 .contact-us {
     background-color: $themeColorGrey;
+    padding: 50px 0px;
     h2 {
         @include headerFontStyle();
     }

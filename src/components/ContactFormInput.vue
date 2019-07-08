@@ -28,6 +28,10 @@ export default {
 @import '../style/variables.scss';
 @import '../style/_mixins.scss'; 
 
+input {
+    border: 0;
+}
+    
 .form-input, .form-input-large {
     width: 50%;
     padding: 10px;
@@ -36,10 +40,6 @@ export default {
 
 .form-input-large {
     height: 100px;
-}
-
-input {
-    border: 0;
 }
 
 .form {
@@ -51,7 +51,7 @@ input {
 }
     
 .submit {
-        @include buttonFormat();
+    @include buttonFormat();
 }
     
 </style>
