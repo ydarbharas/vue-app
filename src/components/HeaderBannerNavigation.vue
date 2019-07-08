@@ -8,7 +8,7 @@
             <li><a class= "process" href="#process">Process</a></li>
             <li><a class= "services" href="#services">Services</a></li>
             <li><a class= "testimonials" href="#testimonials">Testimonals</a></li>
-            <li><a class= "contact" href="#contact">Contact</a></li>
+            <li><a class= "contact" href="#contact-us">Contact</a></li>
         </ul>   
     </div>
 </template>
@@ -22,27 +22,27 @@
 @import '../style/variables.scss';
 
 .nav {
-    font-family: $textFont;
     float: right;
     margin: 0;
     padding: 10px;
+    font-family: $textFont;
+    li {
+        display: inline-block;
+        padding: 25px 9px 10px 9px; 
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 1px; 
+    }
+    li a {
+        text-decoration: none;
+        color: #191919;
+        font-size: 14px;
+        padding: 5px 0px 5px 0px;
+        &:hover {
+        color: #10c9c3; 
+        }
+    }
 }
-
-.nav > li {                                                             
-    display: inline-block;
-    padding: 25px 9px 10px 9px;                               
-} 
-
-.nav > li > a:hover {
-     color: #10c9c3;
- }
-
-.nav > li a {                                               
-     text-decoration: none;
-     color: #191919;
-     font-size: 14px;
-     padding: 5px 0px 5px 0px
- }
 
 .logo {
     float: left;
@@ -50,14 +50,9 @@
     height: auto;
 }
 
-li {
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
 #active {
-    color: #10c9c3;
+    color: $themeColorBlue;
 }
+    
 </style>
 

@@ -1,5 +1,5 @@
 <template>
-<div id="process-video" class="full-width">
+<div id="process-video">
                 <div id="video-video">
                     <a href="#">
                         <video @mouseout="hidePause()" :poster="videoPoster" id="video" @ended="showPlay()">
@@ -51,7 +51,9 @@
 
 </script>
 
-<style>
+<style lang="scss">
+@import '../style/variables.scss';
+@import '../style/_mixins.scss'; 
     
 #video {
     width: 90%;
@@ -73,14 +75,6 @@
 }
     
 #play-button, #pause-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  cursor: pointer;
-}
-    
-
-    
+    @include centerIcons();
+}   
 </style>

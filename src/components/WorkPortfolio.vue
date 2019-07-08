@@ -1,5 +1,6 @@
 <template>
 <div class="portfolio">
+    <a name="work"></a>
     <WorkPortfolioImages/>
 </div>
 </template>

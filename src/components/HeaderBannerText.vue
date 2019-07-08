@@ -2,7 +2,7 @@
     <div class="header-text">
 	   <h1> {{ title }}</h1>
         <p>{{ text }}</p>
-        <button>Contact Us</button>
+        <button><a href=#contact-us>{{buttonText}}</a></button>
         </div>
 </template>
 
@@ -11,7 +11,8 @@ export default {
     data() {
         return {
             title: "We Design and Develop",
-            text: "We are a new design studio based in USA. We have over 20 years of combined experience, and know a thing or two about designing websites and mobile apps."
+            text: "We are a new design studio based in USA. We have over 20 years of combined experience, and know a thing or two about designing websites and mobile apps.",
+            buttonText: "Contact Us"
         }
     }
 }
@@ -39,6 +40,10 @@ export default {
     button {
         @include buttonFormat();
         grid-column: 6 / 8;
+        a {
+            text-decoration: none;
+            color: $themeColorWhite;
+        }
     }
 }
 </style>

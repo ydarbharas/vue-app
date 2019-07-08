@@ -6,6 +6,10 @@
         <StatisticsBanner/>
         <WorkPortfolio/>
         <WorkProcess/>
+        <ServicesBanner/>
+        <Testimonials/>
+        <ClientsBanner/>
+        <ContactForm/>
     </div>
 </template>
 
@@ -16,10 +20,14 @@ import ProfessionalSkills from './components/ProfessionalSkills.vue'
 import StatisticsBanner from './components/StatisticsBanner.vue'
 import WorkPortfolio from './components/WorkPortfolio.vue'
 import WorkProcess from './components/WorkProcess.vue'
+import ServicesBanner from './components/ServicesBanner.vue'
+import Testimonials from './components/Testimonials.vue'
+import ClientsBanner from './components/ClientsBanner.vue'
+import ContactForm from './components/ContactForm.vue'
     
 export default {
     components: {
-        HeaderBanner, AboutUs, ProfessionalSkills, StatisticsBanner, WorkPortfolio, WorkProcess 
+        HeaderBanner, AboutUs, ProfessionalSkills, StatisticsBanner, WorkPortfolio, WorkProcess, ServicesBanner, Testimonials, ClientsBanner, ContactForm
     }
 }
     

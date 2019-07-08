@@ -34,7 +34,7 @@ export default {
 @import '../style/_mixins.scss'; 
 
 .image-container {
-  position: relative;
+    position: relative;
 }
   
 .image {
@@ -75,6 +75,7 @@ export default {
     
 .container {
     @include gridOctoColumns();
+    background-color: $themeColorGrey;
 }
     
 .hover-icon {
