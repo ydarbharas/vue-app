@@ -1,7 +1,7 @@
 <template>
     <div class="about-us">
         <a name="about"></a>
-            <div class="about-text">
+            <div class="about-us__text">
                 <h2>About Us</h2>
                 <p>{{ text }}</p>
                 <img :src="image">
@@ -25,7 +25,7 @@ export default {
 @import '../style/variables.scss';
 @import '../style/_mixins.scss'; 
 
-.about-text {
+.about-us__text {
     padding: 60px 300px;
     h2 {
         font-size: 1.8em;

@@ -1,9 +1,9 @@
 <template>
-<div class="contact-us">
+<div class="contact">
     <div>
-                <a name="contact-us"></a>
+                <a name="contact"></a>
                 <h2>{{ contactForm.title }}</h2>
-                <p class="contact-info"> {{ contactForm.text }}</p>
+                <p class="contact__info"> {{ contactForm.text }}</p>
             </div>
             <div>
                 <ContactFormInput/>
@@ -34,7 +34,7 @@ export default {
 @import '../style/variables.scss';
 @import '../style/_mixins.scss'; 
 
-.contact-us {
+.contact {
     background-color: $themeColorGrey;
     padding: 50px 0px;
     h2 {

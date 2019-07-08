@@ -3,12 +3,12 @@
         <img class="logo" src="../assets/logo.png">
         <ul class="nav">
             <li><a id="active" href="index.html">Home</a></li>
-            <li><a class= "about" href="#about">About</a></li>
-            <li><a class= "work" href="#work">Work</a></li>
-            <li><a class= "process" href="#process">Process</a></li>
-            <li><a class= "services" href="#services">Services</a></li>
-            <li><a class= "testimonials" href="#testimonials">Testimonals</a></li>
-            <li><a class= "contact" href="#contact-us">Contact</a></li>
+            <li><a class= "nav__about" href="#about">About</a></li>
+            <li><a class= "nav__work" href="#work">Work</a></li>
+            <li><a class= "nav__process" href="#process">Process</a></li>
+            <li><a class= "nav__services" href="#services">Services</a></li>
+            <li><a class= "nav__testimonials" href="#testimonials">Testimonals</a></li>
+            <li><a class= "nav__contact" href="#contact">Contact</a></li>
         </ul>   
     </div>
 </template>

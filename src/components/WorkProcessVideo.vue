@@ -1,15 +1,17 @@
 <template>
-<div id="process-video">
-                <div id="video-video">
-                    <a href="#">
-                        <video @mouseout="hidePause()" :poster="videoPoster" id="video" @ended="showPlay()">
-                            <source :src="videoLink" type="video/mp4">
-                        </video>
-                    </a>
-                </div>
-                <img id="play-button" @click="playVid()" src="../assets/play-button.png">
-                <div><img id="pause-button" @click="pauseVid()" src="../assets/pause-button.png"></div>
-            </div>
+    <div id="process-video">
+        <div id="video-video">
+            <a href="#">
+            <video @mouseout="hidePause()" :poster="videoPoster" id="video" @ended="showPlay()">
+                <source :src="videoLink" type="video/mp4">
+            </video>
+            </a>
+        </div>
+        <img id="play-button" @click="playVid()" src="../assets/play-button.png">
+        <div>
+            <img id="pause-button" @click="pauseVid()" src="../assets/pause-button.png">
+        </div>
+    </div>
 </template>
 
 <script>
@@ -64,10 +66,6 @@
 
 #process-video {
     position: relative;
-}
-
-.process {
-    padding: 25px;
 }
 
 #pause-button {

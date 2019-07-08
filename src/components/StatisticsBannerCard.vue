@@ -1,10 +1,10 @@
 <template>
-    <div class="stats-card">
+    <div class="stats__card">
         <div v-for="stat in stats">
-            <img class="stats-image" :src="stat.imageLink">
-            <div class="stats-text">
-                <h3 class="stats-numbers">{{ stat.statsNumber }}</h3>
-                <p class="stats-achievement">{{ stat.statsAchievement}}</p>
+            <img class="stats__card__image" :src="stat.imageLink">
+            <div class="stats__card__text">
+                <h3 class="stats__card__text__numbers">{{ stat.statsNumber }}</h3>
+                <p class="stats__card__text__achievement">{{ stat.statsAchievement}}</p>
             </div>
         </div>
     </div>
@@ -30,28 +30,28 @@ export default {
 @import '../style/variables.scss';
 @import '../style/_mixins.scss';  
         
-.stats-numbers {
+.stats__card__text__numbers {
     margin-bottom: -10px;
 }
 
-.stats-achievement {
+.stats__card__text__achievement {
     font-size: 12px;
     font-weight: 500;
     font-weight: bold;
 }
 
-.stats-image {
+.stats__card__image {
     padding-right: 25px;
     padding-top: 20px;
 }
 
-.stats-card {
+.stats__card {
     @include flexCenter();
     font-family: $headerFont;
     padding-top: 75px;
 }
     
-.stats-text {
+.stats__card__text {
     float: right;
     letter-spacing: 1px;
     text-transform: uppercase;

@@ -1,8 +1,8 @@
 <template>
     <div>
-        <div class="skills-info" v-for="skill in skills">
-            <p class="skill-name">{{ skill.skillsName }}</p>
-            <p class="skill-percentage">{{ skill.skillsPercentage }}</p>
+        <div class="skills__info" v-for="skill in skills">
+            <p class="skills__info__name">{{ skill.skillsName }}</p>
+            <p class="skills__info__percentage">{{ skill.skillsPercentage }}</p>
             <div id="progress-bar-back">
                 <div :class="skill.skillsClass"></div>
             </div>
@@ -15,9 +15,9 @@ export default {
     data() {
         return {
             skills: [
-                { id: 1, skillsName: "ui/ux design", skillsPercentage: "75%", skillsClass: "design"},
-                { id: 2, skillsName: "web development", skillsPercentage: "90%", skillsClass: "web-dev"},
-                { id: 3, skillsName: "marketing", skillsPercentage: "65%", skillsClass: "marketing"}//,
+                { id: 1, skillsName: "ui/ux design", skillsPercentage: "75%", skillsClass: "skills__info__design"},
+                { id: 2, skillsName: "web development", skillsPercentage: "90%", skillsClass: "skills__info__web-dev"},
+                { id: 3, skillsName: "marketing", skillsPercentage: "65%", skillsClass: "skills__info__marketing"}//,
 // Add new skill test { id: 4, skillsName: "photography", skillsPercentage: "80%", skillsClass: "advertising"}
             ]            
         }
@@ -29,11 +29,11 @@ export default {
 @import '../style/variables.scss';
 @import '../style/_mixins.scss';
 
-.skill-name, .skill-percentage {
+.skills__info__name, .skills__info__percentage {
     display: inline;   
 }
 
-.skill-percentage {
+.skills__info__percentage {
     padding: 20px
 }
 
@@ -44,7 +44,7 @@ export default {
     margin-top: 15px
 }
 
-.skills-info {
+.skills__info {
     width: 50%;
     padding: 0px 50px;
     text-align: left;
@@ -55,17 +55,17 @@ export default {
     font-weight: bold;
 }
  
-.design {
+.skills__info__design {
     @include skillsProgressBar();
     width: 75%;
 }
 
-.web-dev {
+.skills__info__web-dev {
     @include skillsProgressBar();
     width: 90%;
 }
     
-.marketing {
+.skills__info__marketing {
     @include skillsProgressBar();
      width: 65%;
 }

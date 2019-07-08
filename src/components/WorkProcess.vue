@@ -1,5 +1,5 @@
 <template>
-<div class="work-process">
+<div class="process">
     <a name="process"></a>
     <h2>{{ title }}</h2>
     <p>{{ text }} </p>
@@ -27,14 +27,14 @@ export default {
     @import '../style/variables.scss';
     @import '../style/_mixins.scss'; 
 
-.work-process {
+.process {
     h2 {
         @include headerFontStyle();
-        padding-top: 50px;
+        padding-top: 100px;
     }
     p {
         @include textFontStyle();
-        padding-bottom: 30px;
+        padding: 0 300px 50px 300px;
     }   
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <div class="stats-banner">
+    <div class="stats">
         <StatisticsBannerCard/>
     </div>
 </template>
@@ -18,7 +18,7 @@ export default {
 
 @import '../style/variables.scss';
 
-.stats-banner {
+.stats {
     background-color: $themeColorBlue;
     height: 250px;
     margin-bottom: -20px;

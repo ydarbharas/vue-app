@@ -1,5 +1,8 @@
 <template>
+<div class="services">
+       <a name="services"></a>
     <ServicesBannerCard/>
+    </div>
 </template>
 
 <script>
@@ -13,5 +16,9 @@ export default {
 </script>
 
 <style>
+    
+.services {
+   margin-bottom: -30px;
+}
 
 </style>

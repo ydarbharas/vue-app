@@ -1,9 +1,12 @@
 <template>
-    <div>
+    <div class="contact__form">
         <form>
-            <input v-for="contact in contactForm" :class="contact.inputClass" :placeholder="contact.inputPlaceholder">
+            <input class="contact__form--small" placeholder="Your Name">
+            <input class="contact__form--small" placeholder="Your Email"><br>
+            <input class="contact__form--normal" placeholder="Your Title"><br>
+            <input class="contact__form--large" id="comment" placeholder="Your Comment">
         </form>
-        <button class="submit">{{sendMessageButton}}</button>
+        <button class="contact__form__submit">{{sendMessageButton}}</button>
     </div>
 </template>
 
@@ -11,12 +14,6 @@
 export default {
     data() {
         return {
-            contactForm: [
-                {id: 1, inputClass: "form", inputPlaceholder: "Your Name"},
-                {id: 2, inputClass: "form", inputPlaceholder: "Your Email"},
-                {id: 3, inputClass: "form-input", inputPlaceholder: "Your Title"},
-                {id: 4, inputClass: "form-input-large", inputPlaceholder: "Your Comment"}
-            ],
             sendMessageButton: "Send Message"
         }
     }    
@@ -32,25 +29,26 @@ input {
     border: 0;
 }
     
-.form-input, .form-input-large {
-    width: 50%;
+.contact__form--normal, .contact__form--large {
+    width: 51%;
     padding: 10px;
     margin: 10px;
+    
 }
 
-.form-input-large {
+.contact__form--large {
     height: 100px;
 }
 
-.form {
-    width: 30.5em;
+.contact__form--small {
+    width: 25%;
     padding: 10px;
     margin: 10px;
     @include textFontStyle();
     
 }
     
-.submit {
+.contact__form__submit {
     @include buttonFormat();
 }
     

@@ -1,8 +1,8 @@
 <template>
-    <div class="header-text">
+    <div class="header__text">
 	   <h1> {{ title }}</h1>
         <p>{{ text }}</p>
-        <button><a href=#contact-us>{{buttonText}}</a></button>
+        <button><a href=#contact>{{buttonText}}</a></button>
         </div>
 </template>
 
@@ -22,7 +22,7 @@ export default {
 @import '../style/variables.scss';
 @import '../style/_mixins.scss';   
 
-.header-text {
+.header__text {
     @include gridOctoColumns();
     clear: right;
     text-align: left;
