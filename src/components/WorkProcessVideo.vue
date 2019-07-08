@@ -54,7 +54,7 @@
 </script>
 
 <style lang="scss">
-@import '../style/variables.scss';
+
 @import '../style/_mixins.scss'; 
     
 #video {

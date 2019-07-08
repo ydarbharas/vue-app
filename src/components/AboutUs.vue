@@ -22,7 +22,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../style/variables.scss';
+    
 @import '../style/_mixins.scss'; 
 
 .about-us__text {

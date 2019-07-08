@@ -18,7 +18,9 @@ export default {
                 { id: 1, skillsName: "ui/ux design", skillsPercentage: "75%", skillsClass: "skills__info__design"},
                 { id: 2, skillsName: "web development", skillsPercentage: "90%", skillsClass: "skills__info__web-dev"},
                 { id: 3, skillsName: "marketing", skillsPercentage: "65%", skillsClass: "skills__info__marketing"}//,
-// Add new skill test { id: 4, skillsName: "photography", skillsPercentage: "80%", skillsClass: "advertising"}
+/* Add new skill test 
+                { id: 4, skillsName: "photography", skillsPercentage: "80%", skillsClass: "advertising"}
+*/
             ]            
         }
     }
@@ -75,4 +77,5 @@ export default {
     background-color: #10c9c3;
     height: 5px;
 } */
+    
 </style>

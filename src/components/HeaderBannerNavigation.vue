@@ -13,17 +13,16 @@
            return {
                navBar: [
                    {id: 1, navName: "Home", navClass: "nav__home", navLink: "index.html", navId: "active", },
-                   {id: 2, navName: "About", navClass: "nav__about", navLink: "#about", navId: "", },
-                   {id: 3, navName: "Work", navClass: "nav__work", navLink: "#work", navId: "", },
-                   {id: 4, navName: "Process", navClass: "nav__process", navLink: "#process", navId: "", },
-                   {id: 5, navName: "Services", navClass: "nav__services", navLink: "#services", navId: "", },
-                   {id: 6, navName: "Testimonials", navClass: "nav__testimonials", navLink: "#testimonials", navId: "", },
-                   {id: 7, navName: "Contact", navClass: "nav__contact", navLink: "#contact", navId: "", },
+                   {id: 2, navName: "About", navClass: "nav__about", navLink: "#about", navId: ""},
+                   {id: 3, navName: "Work", navClass: "nav__work", navLink: "#work", navId: ""},
+                   {id: 4, navName: "Process", navClass: "nav__process", navLink: "#process", navId: ""},
+                   {id: 5, navName: "Services", navClass: "nav__services", navLink: "#services", navId: ""},
+                   {id: 6, navName: "Testimonials", navClass: "nav__testimonials", navLink: "#testimonials", navId: ""},
+                   {id: 7, navName: "Contact", navClass: "nav__contact", navLink: "#contact", navId: ""},
                ]
            }
        }
    }
-
 </script>
 
 <style lang="scss">
@@ -63,4 +62,3 @@
 }
     
 </style>
-

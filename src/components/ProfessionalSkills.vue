@@ -16,7 +16,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../style/variables.scss';
+
 @import '../style/_mixins.scss'; 
     
 #skills {

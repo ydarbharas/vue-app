@@ -44,8 +44,7 @@ export default {
 
 <style lang="scss">
 
-@import '../style/variables.scss';
-@import '../style/_mixins.scss'; 
+@import '../style/variables.scss'; 
     
 .testimonials {
     background-color: $themeColorBlue;

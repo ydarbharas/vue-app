@@ -22,7 +22,6 @@ export default {
 
 <style lang="scss">
 
-@import '../style/variables.scss';
 @import '../style/_mixins.scss'; 
 
 input {
